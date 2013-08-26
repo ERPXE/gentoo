@@ -1,0 +1,17 @@
+LABEL GENTOO32
+MENU LABEL ^Gentoo - x32
+KERNEL er/plugins/gentoo/i386/gentoo
+INITRD er/plugins/gentoo/i386/gentoo.igz
+APPEND loop=/image.squashfs root=/dev/ram0 init=/linuxrc looptype=squashfs doscsi console=tty1 vga=791 nfsroot=10.0.0.1:/tftpboot/er/shares/gentoo/i386 cdroot=1 real_root=/dev/nfs 
+TEXT HELP
+                 Gentoo - i386.
+ENDTEXT
+
+LABEL GENTOONOFB32
+MENU LABEL ^Gentoo - x32 - Safe Mode
+KERNEL er/plugins/gentoo/i386/gentoo
+INITRD er/plugins/gentoo/i386/gentoo.igz
+APPEND loop=/image.squashfs root=/dev/ram0 init=/linuxrc looptype=squashfs doscsi console=tty1 vga=normal nfsroot=10.0.0.1:/tftpboot/er/shares/gentoo/i386 cdroot=1 real_root=/dev/nfs 
+TEXT HELP
+                 Gentoo - i386 Safe Mode.
+ENDTEXT

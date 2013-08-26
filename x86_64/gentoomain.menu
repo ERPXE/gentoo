@@ -1,0 +1,17 @@
+LABEL GENTOO64
+MENU LABEL ^Gentoo - x64
+KERNEL er/plugins/gentoo/x86_64/gentoo
+INITRD er/plugins/gentoo/x86_64/gentoo.igz
+APPEND loop=/image.squashfs root=/dev/ram0 init=/linuxrc looptype=squashfs doscsi console=tty1 vga=791 nfsroot=10.0.0.1:/tftpboot/er/shares/gentoo/x86_64 cdroot=1 real_root=/dev/nfs 
+TEXT HELP
+                 Gentoo - x86_64.
+ENDTEXT
+
+LABEL GENTOONOFB64
+MENU LABEL ^Gentoo - x64 Safe Mode
+KERNEL er/plugins/gentoo/x86_64/gentoo
+INITRD er/plugins/gentoo/x86_64/gentoo.igz
+APPEND loop=/image.squashfs root=/dev/ram0 init=/linuxrc looptype=squashfs doscsi console=tty1 vga=normal nfsroot=10.0.0.1:/tftpboot/er/shares/gentoo/x86_64 cdroot=1 real_root=/dev/nfs 
+TEXT HELP
+                 Gentoo - x86_64 Safe Mode.
+ENDTEXT
