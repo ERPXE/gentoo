@@ -1,9 +1,6 @@
 MENU BEGIN GENTOO
+MENU TITLE Gentoo 2012
 MENU LABEL ^Gentoo 2012
-# ------====> Include Menu Settings <====------
-MENU INCLUDE er/menuinc/header.module
-
-# ------====> Set Specific Page Settings <====------
 MENU BACKGROUND er/plugins/gentoo/gentoo.png
 
 MENU INCLUDE er/plugins/gentoo/i386/gentoomain.menu
